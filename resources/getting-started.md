@@ -24,7 +24,7 @@ Before restoring, call `checkRestore`: it says what the restore would do, or why
 
 ## Change a tool's description
 
-On a server linked to a repository, use `proposeToolDescription`, which opens a pull request. Production changes when it merges. On a server with no repository, use `deployToolDescription` with the server's `liveDeploymentId` as `base`. It goes live straight away.
+On a server linked to a repository, use `proposeToolDescription`, which opens a pull request. Production changes when it merges. On a server with no repository, use `deployToolDescription` with the server's `liveDeploymentId` as `base`. It goes live straight away. Both take `serverId` and the tool's `name` at the top level, and `description` (and `base`) under `body`.
 
 ## Calls that ask first
 
