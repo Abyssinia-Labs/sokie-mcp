@@ -1,0 +1,6 @@
+{
+  "$schema": "https://sokie.sh/schema/test.v1.json",
+  "description": "The key that called is known, so the rest of the server acts for a person.",
+  "tool": "getMe",
+  "expect": { "ok": true, "under": "2s" }
+}

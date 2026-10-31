@@ -1,0 +1,29 @@
+{
+  "$schema": "https://sokie.sh/schema/server.v1.json",
+  "schemaVersion": 1,
+  "name": "Sokie",
+  "description": "Manage your Sokie servers from an agent: see what's deployed, read calls, usage and the audit trail, redeploy, restore, and improve tool descriptions.",
+  "source": {
+    "type": "openapi",
+    "path": "openapi.json",
+    "url": "https://api.sokie.cloud/v1/openapi.json"
+  },
+  "upstream": {
+    "auth": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "prefix": "Bearer ",
+      "key": "perCaller",
+      "identity": {
+        "path": "/me",
+        "id": "userId",
+        "email": "email",
+        "name": "name"
+      }
+    }
+  },
+  "settings": {
+    "closedWorld": true
+  }
+}

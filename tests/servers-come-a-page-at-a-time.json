@@ -1,0 +1,7 @@
+{
+  "$schema": "https://sokie.sh/schema/test.v1.json",
+  "description": "Listing servers respects the limit, so an agent never reads a whole workspace at once.",
+  "tool": "listServers",
+  "input": { "limit": 5 },
+  "expect": { "ok": true, "items": { "atMost": 5 }, "under": "2s" }
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://sokie.sh/schema/test.v1.json",
+  "description": "A slug the key can't see answers with an error, never with someone else's server.",
+  "tool": "getServer",
+  "input": { "slug": "no-server-has-this-slug" },
+  "expect": { "ok": false }
+}
