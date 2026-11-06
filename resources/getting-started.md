@@ -10,7 +10,7 @@ Each tool acts for the person whose API key this connection uses. A key belongs 
 
 ## Find a server
 
-Start with `listServers`. Each server has a `slug` and a `serverId`: `getServer` takes the slug, and the tools for deploys, tools, calls and secrets take the `serverId`.
+Start with `listServers`. Each server has a `slug` and a `serverId`: `getServer` takes the slug, and the tools for deploys, tools, skills, calls and secrets take the `serverId`.
 
 ## Read more than one page
 

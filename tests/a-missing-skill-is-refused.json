@@ -1,0 +1,7 @@
+{
+  "$schema": "https://sokie.sh/schema/test.v1.json",
+  "description": "A skill on a server the key can't see answers with an error, never with someone else's skill.",
+  "tool": "getServerSkill",
+  "input": { "serverId": "no-server-has-this-id", "name": "no-skill-has-this-name" },
+  "expect": { "ok": false }
+}
