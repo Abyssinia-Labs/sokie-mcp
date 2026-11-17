@@ -6,7 +6,7 @@ description: How to find a server, follow a deploy, and what this server can't d
 
 # Getting started
 
-Each tool acts for the person whose API key this connection uses. A key belongs to one workspace, and can do what its scopes and servers allow. A tool answers `SCOPE_REQUIRED` when the key is missing a scope, and the answer names it.
+Each tool acts for the person who connected, in the one workspace they chose. It can do what they can there, and nothing more: on Read only, only reads. A tool answers `SCOPE_REQUIRED` when the connection can't make that call, and the answer says why. To reach another workspace, the person connects again and chooses it.
 
 ## Find a server
 
